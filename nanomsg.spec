@@ -1,10 +1,10 @@
-%define major 5.0.0
+%define major 5
 %define libname %mklibname nanomsg %{major}
 %define devname %mklibname nanomsg -d
 
 Name: nanomsg
-Version: 1.0.0
-Release: 2
+Version:	1.1.5
+Release:	1
 Source0: https://github.com/nanomsg/nanomsg/archive/%{version}.tar.gz
 Summary: Socket library providing several common communication patterns
 URL: http://nanomsg.org/
@@ -103,9 +103,9 @@ DESTDIR="%{buildroot}" ninja -C build install
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
-%{_libdir}/*.so.%{version}
 
 %files -n %{devname}
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
+%{_libdir}/cmake/%{name}-%{version}/*.cmake
