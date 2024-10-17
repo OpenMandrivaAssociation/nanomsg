@@ -7,7 +7,7 @@ Version:	1.1.5
 Release:	2
 Source0: https://github.com/nanomsg/nanomsg/archive/%{version}.tar.gz
 Summary: Socket library providing several common communication patterns
-URL: http://nanomsg.org/
+URL: https://nanomsg.org/
 License: MIT
 Group: System/Libraries
 BuildRequires: cmake ninja
