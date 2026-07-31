@@ -3,8 +3,8 @@
 %define devname %mklibname nanomsg -d
 
 Name: nanomsg
-Version:	1.1.5
-Release:	2
+Version:	1.2.2
+Release:	1
 Source0: https://github.com/nanomsg/nanomsg/archive/%{version}.tar.gz
 Summary: Socket library providing several common communication patterns
 URL: https://nanomsg.org/
